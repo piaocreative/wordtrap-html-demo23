@@ -1,0 +1,169 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+/* Product
+-----------------------------------------------------------------*/
+.product {	
+	display: inline-block;
+	position: relative;
+	padding: 1rem;
+
+	.product-image {
+		position: relative;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.product-details {	
+		padding: 0.875rem 0;
+		z-index: 1;
+	}
+
+	.product-price {
+		line-height: 1;
+		color: $secondary;
+
+		span {
+			background-color: #bf4f4f;
+			padding: 0.2rem 0.5rem;
+			border-radius: 0.5rem;
+		}
+
+		del {
+			font-size: 0.75rem;
+			font-weight: 300;
+		}
+
+		sub {
+			font-size: 0.75rem;
+			margin: 0.3rem;
+		}
+	}
+
+	.product-title {
+		font-weight: 600;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	}
+
+	.product-info {
+		li {
+			p {
+				font-size: 0.875rem;
+				color: #7f7f7f;
+			}
+		}
+	}
+
+	.product-rating {
+		line-height: 1;
+		color: $secondary;
+		font-size: 0.875rem;
+
+		i {
+			color: #f6aa46;
+			font-size: 0.75rem;
+
+			&.empty {
+				color: rgba(#f6aa46, 0.5);
+			}
+		}
+	}
+
+	.product-meta {
+		font-size: 0.875rem;
+		color: #707070;
+	}
+
+	.product-btns {
+		@include transition(all 0.3s ease-in-out);
+	}	
+
+	.watch-video {
+		font-size: 1.125rem;
+		font-weight: 700;
+		color: $dark;
+	}
+}
+
+.latest {
+	position: absolute;
+	top: 8rem;
+	right: 0;
+	width: 100%;
+
+	@include media-breakpoint-down(lg) {
+		position: relative;
+		top: 0;
+	}
+}
+
+.products {
+	.slick-track {
+		margin-left: -4rem;
+	
+		@include media-breakpoint-down(xxl) {
+			margin: 0;
+		}
+	}
+}
+
+.video-btn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	a {
+		padding: 1.5rem;
+		border-radius: 50%;
+		font-size: 1.125rem;
+	}
+}
+
+.onbest,
+.ontop,
+.onnew,
+.onhot,
+.onsale {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1;
+    z-index: 3;
+}
+
+.onhot {
+	background-color: #ff3263;
+	color: $white;
+}
+
+.onbest {
+	background-color: #8b5ec7;
+	color: $white;
+}
+
+.ontop {
+	background-color: #5adbde;
+	color: $white;
+}

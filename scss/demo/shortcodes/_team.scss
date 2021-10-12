@@ -1,0 +1,39 @@
+.team {
+    padding: 2rem 0;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+
+    .team-name {
+        font-family: $heading-font;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .team-info {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
+}
+
+.team-image {
+    position: absolute;
+    top: -4.5rem;
+    left: 4.5rem;
+    z-index: 0;
+
+    img {
+        max-width: calc(13.5vw - 5rem);
+    }
+
+    @include media-breakpoint-down(lg) {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        img{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}

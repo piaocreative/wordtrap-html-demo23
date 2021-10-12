@@ -1,0 +1,31 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+.error-404 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .error-btn {
+        background-color: $theme-color;
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            font-size: 1.125rem;
+            color: $white;
+        }
+    }
+}

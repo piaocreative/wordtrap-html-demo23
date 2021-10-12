@@ -1,0 +1,31 @@
+.porfolios {
+    position: absolute;
+    top: 20rem;
+    right: 0;
+    width: 100%;
+
+    @include media-breakpoint-down(lg) {
+        position: relative;
+        top: 0;
+    }
+}
+
+.porfolio-slick {
+    .slick-list {
+        padding: 0 15rem !important;
+    }
+
+    .slick-track {
+        margin-left: -16rem;
+    }
+
+    @include media-breakpoint-down(xxl) {
+        .slick-list {
+            padding: 0 !important;
+        }
+
+        .slick-track {
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,175 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.slider-control {
+	a {
+		font-size: 1.75rem;
+		color: #cccccc;
+
+		&:hover {
+			color: $dark !important;
+		}
+	}
+}
+
+.page-links {
+	font-family: $heading-font;
+	font-size: 1.125rem;
+    font-weight: 700;
+	text-transform: uppercase;
+	display: inline-block;
+	text-decoration: none;
+	color: $dark;
+	position: relative;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	letter-spacing: 0.05rem;
+
+	span {
+		background-color: $white;
+	}
+
+	&:after {
+		position: absolute;
+		display: inline-block;
+		content: "";
+		border-radius: 50%;
+		width: 8rem;
+		height: 8rem;
+		border: 1px solid;
+		left: 2rem;
+		z-index: -1;
+	}
+
+	@include media-breakpoint-down(lg) {
+		margin-top: 4rem !important;
+		margin-bottom: 4rem !important;
+	}
+}
+
+.container-fluid {
+	overflow: hidden;
+}
+
+// slider items//
+.slick-prev::before, .slick-next:before {
+	font-size: 1.5rem;
+	opacity: 1;
+	color:#dcdcdc;
+
+	@include media-breakpoint-down(lg) {
+	   display: none;
+   }
+}
+
+.slick-prev {
+	left: -4rem;
+
+	@include media-breakpoint-down(lg) {
+	   display: none !important;
+   }
+}
+
+.slick-next {
+	right: -4rem;
+
+   @include media-breakpoint-down(lg) {
+	   display: none !important;
+   }
+}
+
+.slick-slide {
+	height: auto;
+}
+
+.slider-control {
+	a {
+		color: #8d8d8d;
+	
+		&:hover {
+			color: $theme-color;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		display: none !important;
+	}
+}
+
+.recommend {
+    position: absolute;
+    top: 13rem;
+    right: 0;
+    width: 100%;
+
+    @include media-breakpoint-down(lg) {
+        position: relative;
+        top: 0;
+    }
+}
+
+.recommend-slick {
+    .slick-list {
+        padding: 0 15rem !important;
+    }
+
+    .slick-track {
+        margin-left: -16rem;
+    }
+
+    @include media-breakpoint-down(xxl) {
+        .slick-list {
+            padding: 0 !important;
+        }
+
+        .slick-track {
+            margin-left: 0;
+        }
+    }
+} 
+
+.film {
+	position: relative;
+	padding: 1rem;
+
+	.film-preview {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.film-details {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 2.25rem 2.5rem;
+		width: 100%;
+	}
+
+	.film-title {
+		font-family: $heading-font;
+		font-weight: 600;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		color: $white;
+		letter-spacing: 0.15rem;
+	}
+
+	.video-btn {
+		a {
+			padding: 2rem;
+			color: $white;
+			background-color: $theme-color;
+		}
+	}
+}
