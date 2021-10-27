@@ -1,12 +1,9 @@
 .porfolios {
-    position: absolute;
-    top: 20rem;
-    right: 0;
-    width: 100%;
-
-    @include media-breakpoint-down(lg) {
-        position: relative;
-        top: 0;
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: 20rem;
+        right: 0;
+        width: 100%;
     }
 }
 

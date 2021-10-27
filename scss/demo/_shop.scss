@@ -27,7 +27,6 @@
 
 		img {
 			width: 100%;
-			height: auto;
 		}
 	}
 
@@ -104,23 +103,18 @@
 }
 
 .latest {
-	position: absolute;
-	top: 8rem;
-	right: 0;
-	width: 100%;
-
-	@include media-breakpoint-down(lg) {
-		position: relative;
-		top: 0;
+	@include media-breakpoint-up(lg) {
+		position: absolute;
+		top: 8rem;
+		right: 0;
+		width: 100%;
 	}
 }
 
 .products {
 	.slick-track {
-		margin-left: -4rem;
-	
-		@include media-breakpoint-down(xxl) {
-			margin: 0;
+		@include media-breakpoint-up(xxl) {
+			margin-left: -4rem;
 		}
 	}
 }

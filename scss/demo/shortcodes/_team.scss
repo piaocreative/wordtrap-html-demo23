@@ -2,6 +2,7 @@
     padding: 2rem 0;
     border-top: 1px solid #cecece;
     border-bottom: 1px solid #cecece;
+    color: $dark;
 
     .team-name {
         font-family: $heading-font;
@@ -14,26 +15,32 @@
         font-size: 0.75rem;
         text-transform: uppercase;
     }
+
+    &:hover {
+        .team-image {
+            opacity: 1;
+        }
+    }
 }
 
 .team-image {
-    position: absolute;
-    top: -4.5rem;
-    left: 4.5rem;
-    z-index: 0;
+    opacity: 0;
+    
+    @include transition(all 0.3s ease-in-out);
 
-    img {
-        max-width: calc(13.5vw - 5rem);
+    img{
+        max-width: 100%;
+        width: 100%;
     }
 
-    @include media-breakpoint-down(lg) {
-        position: relative;
-        top: 0;
-        left: 0;
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: -4.5rem;
+        left: 4.5rem;
+        z-index: 0;
 
-        img{
-            max-width: 100%;
-            width: 100%;
+        img {
+            max-width: calc(13.5vw - 5rem);
         }
     }
 }

@@ -96,36 +96,17 @@
 				}
 			}
 		}
-
-		@include media-breakpoint-down(lg) {
-			padding: 0 !important;
-		}
 	}
-
-	@include media-breakpoint-down(md) {
-
-		&.widget-links {
-
-			.widget-content {
-				justify-content: space-between;
-			}
-
-			ul {
-				width: auto;
-				margin: auto;
-			}
-		}
-}
 
 	// Widget - Payments
 	&.widget-payment {
-
 		p {
 			color: $white;
 			font-size: 1.125rem;
 			display: block;
 			font-family: $heading-font;
 		}
+
 		.payments {
 
 			.payment-icon {
@@ -136,10 +117,10 @@
 				background-size: 80% auto;
 				background-repeat: no-repeat;
 				background-position: center;
-				border-radius: 0.5rem !important;
+				border-radius: 0.5rem;
 
 				img {
-					width: 2rem !important;
+					width: 2rem;
 				}
 			}
 		}
@@ -148,7 +129,6 @@
 	// Widget - custom html
 	&.widget-custom-html {
 		.widget-content {
-
 			a {
 				font-size: 0.875rem;
 			}

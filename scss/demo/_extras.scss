@@ -15,7 +15,7 @@
 		color: #cccccc;
 
 		&:hover {
-			color: $dark !important;
+			color: $dark;
 		}
 	}
 }
@@ -26,7 +26,6 @@
     font-weight: 700;
 	text-transform: uppercase;
 	display: inline-block;
-	text-decoration: none;
 	color: $dark;
 	position: relative;
 	display: flex;
@@ -106,14 +105,11 @@
 }
 
 .recommend {
-    position: absolute;
-    top: 13rem;
-    right: 0;
-    width: 100%;
-
-    @include media-breakpoint-down(lg) {
-        position: relative;
-        top: 0;
+	@include media-breakpoint-up(lg) {
+		position: absolute;
+		width: 100%;
+		top: 13rem;
+		right: 0;
     }
 }
 
